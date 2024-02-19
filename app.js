@@ -38,7 +38,12 @@ for (let i = 0; i < seats.length; i++) {
         setInnerText("remain-seat", remainSeat);
 
         const title = seat.querySelector("p").innerText;
-        // console.log(title.innerText);
+        // console.log(title);
+        
+           
+            // console.log(sitColor);
+            seat.classList.add("bg-[#27AE60]");
+        
 
 
         const ticketContainer = document.getElementById("ticket-container");
@@ -51,7 +56,7 @@ for (let i = 0; i < seats.length; i++) {
         ticketContainer.appendChild(p);
 
         
-
+setBgById(seat);
         
 
     })
@@ -61,7 +66,7 @@ function setInnerText(id, value) {
     document.getElementById(id).innerText = value;
 }
 
-
+setBgById
 
 const btn = document.getElementById("apply-btn");
 btn.addEventListener("click", function () {
