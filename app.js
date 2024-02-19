@@ -22,9 +22,9 @@ for (let i = 0; i < seats.length; i++) {
     const seat = seats[i];
     // console.log(seat);
     seat.addEventListener("click", function () {
-        // console.log("clicked");
-
         
+
+      
         totalPrice += 550;
 
         seatCount += 1;
@@ -102,15 +102,13 @@ function showElementById(elementId) {
     element.classList.remove('hidden');
 }
 
-function hideElementByID(elementId) {
-    const element = document.getElementById(elementId);
-    element.classList.add('hidden');
-}
 
 
 
 
 function popup(){
     showElementById('popup');
-    hideElementByID('close');
+    // hideElementByID('close');
 }
+// --------------------------------------------------------------------------------------
+
