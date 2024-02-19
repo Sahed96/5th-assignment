@@ -48,12 +48,21 @@ for (let i = 0; i < seats.length; i++) {
 
         const ticketContainer = document.getElementById("ticket-container");
         
-
+        
+        const td = document.createElement("td");
         const p = document.createElement("p");
+        const p1 = document.createElement("p1");
+        const p2 = document.createElement("p2");
 
-        p.innerText = title +"       "+ "Economy" + "      " + 550 ;
+        p.innerText = title;
+        p1.innerText = "Economy";
+        p2.innerText = 550;
+
+        td.appendChild(p);
+        td.appendChild(p1);
+        td.appendChild(p2);
        
-        ticketContainer.appendChild(p);
+        ticketContainer.appendChild(td);
 
         
 

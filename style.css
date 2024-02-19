@@ -22,3 +22,8 @@
     font-style: normal;
 }
 
+#ticket-container td{
+    display: flex;
+    justify-content: space-between;
+}
+
