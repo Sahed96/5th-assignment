@@ -1,10 +1,10 @@
 
 
-function setBgById(elementId) {
-    const element = document.getElementById(elementId);
-    console.log(sitColor);
-    element.classList.add("bg-[#27AE60]");
-}
+// function setBgById(elementId) {
+//     const element = document.getElementById(elementId);
+//     console.log(sitColor);
+//     element.classList.add("bg-[#27AE60]");
+// }
 
 
 
@@ -20,7 +20,7 @@ let remainSeat =40;
 
 for (let i = 0; i < seats.length; i++) {
     const seat = seats[i];
-    // console.log(seat);
+    
     seat.addEventListener("click", function () {
         
 
@@ -38,16 +38,16 @@ for (let i = 0; i < seats.length; i++) {
         setInnerText("remain-seat", remainSeat);
 
         const title = seat.querySelector("p").innerText;
-        // console.log(title);
+        
         
            
-            // console.log(sitColor);
+            
             seat.classList.add("bg-[#27AE60]");
         
 
 
         const ticketContainer = document.getElementById("ticket-container");
-        // console.log(ticketContainer);
+        
 
         const p = document.createElement("p");
 
@@ -56,7 +56,7 @@ for (let i = 0; i < seats.length; i++) {
         ticketContainer.appendChild(p);
 
         
-setBgById(seat);
+
         
 
     })
@@ -66,7 +66,6 @@ function setInnerText(id, value) {
     document.getElementById(id).innerText = value;
 }
 
-setBgById
 
 const btn = document.getElementById("apply-btn");
 btn.addEventListener("click", function () {
@@ -97,11 +96,7 @@ btn.addEventListener("click", function () {
 })
 
 
-// if (seatCount >= 4){
-//     alert("not more than 4")
-// }else{
-    
-// }
+
 function showElementById(elementId) {
     const element = document.getElementById(elementId);
     element.classList.remove('hidden');
@@ -113,7 +108,7 @@ function showElementById(elementId) {
 
 function popup(){
     showElementById('popup');
-    // hideElementByID('close');
+    
 }
 // --------------------------------------------------------------------------------------
 
